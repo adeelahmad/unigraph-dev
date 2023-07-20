@@ -133,7 +133,7 @@ jobs:
               uses: samuelmeuli/action-electron-builder@master
               with:
                   # Don't run `yarn build`, which otherwise happens by default
-                  skip_build: true
+                  skip_build: false
                   # GitHub token, automatically provided to the action
                   # (No need to define this secret in the repo settings)
                   github_token: ${{ secrets.GITHUB_TOKEN }}
