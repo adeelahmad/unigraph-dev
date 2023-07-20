@@ -15,7 +15,8 @@ jobs:
         runs-on: ${{ matrix.os }}
         strategy:
             matrix:
-                os: [ubuntu-latest, windows-latest, macos-latest]
+            # ubuntu-latest, windows-latest,
+                os: [ macos-latest]
                 electron-arch-overrides: ['']
         env:
             USE_HARD_LINKS: false
