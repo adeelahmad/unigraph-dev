@@ -11,7 +11,7 @@ on:
 
 jobs:
     release-electron:
-        if: github.event_name == 'push' && startsWith(github.ref, 'refs/tags/v')
+        if: github.event_name == 'push'
         runs-on: ${{ matrix.os }}
         strategy:
             matrix:
